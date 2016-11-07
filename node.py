@@ -3,16 +3,16 @@ from random import randint
 class Node():
 	def __init__(self, life, max_mutation, world):
 		self.__life = life
-		self.max_mutation = max_mutation
+		self.__max_mutation = max_mutation
 		self.__world = world
 
 	def __mutate(self):
-		return self.__life * randint(0, self.max_mutation)
+		return self.__life * randint(0, self.__max_mutation)
 
 	def split(self):
 		self.__life /= 2
 		mutation = self.__mutate()
-		self.__world.add(Node(mutation, self.max_mutation, self.__world))
+		self.__world.add(Node(mutation, self.__max_mutation, self.__world))
 
 	def heartbeat(self):
 		if self.__life < 0:
