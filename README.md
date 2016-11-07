@@ -11,8 +11,8 @@ You'll need [Python 2](https://www.python.org/downloads/) installed on your mach
 
 Once you've installed Python, locate the project in the terminal and run:
 
-	$ python world.py 100 3 1000
+	$ python node_world.py 100 3 1000
 
 You can swap the integers to be whatever you like, they represent the following values:
 
-	$ python world.py [Life span of first node] [Maximum potential mutation] [Maximum number of nodes allowed]
+	$ python node_world.py [Life span of first node] [Maximum potential mutation] [Maximum number of nodes allowed]
